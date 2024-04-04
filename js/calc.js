@@ -124,7 +124,7 @@ function calculateLoanSchedule(loanAmount, yearlyInterest, months, partPaymentFr
     totalInterestPaid: totalInterestPaid,
     moneySaved: monthlyPayment * months - (loanAmount + totalInterestPaid),
     monthlyPayment: monthlyPayment,
-    totalAmount: loanAmount + totalInterestPaid + totalPartPayment,
+    totalAmount: loanAmount + totalInterestPaid,
   };
 }
 
