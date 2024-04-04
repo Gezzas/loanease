@@ -101,7 +101,7 @@ function calculateLoanSchedule(loanAmount, yearlyInterest, months, partPaymentFr
       monthlyInterest: toAmount(monthlyInterest),
       monthlyPayment: toAmount(monthlyPayment),
       partPaymentMade: toAmount(partPaymentMade),
-      monthlyPaymentWithPartPayment: toAmount(monthlyPayment + partPaymentMade),
+      monthlyPaymentWithPartPayment: toAmount(Math.min(monthlyPayment + partPaymentMade, openingBalance)),
       remainingLoanAmount: toAmount(remainingLoanAmount),
       loanPaid: (((loanAmount - remainingLoanAmount) / loanAmount) * 100).toFixed(2),
     };
