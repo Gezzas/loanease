@@ -70,8 +70,6 @@ function calculateLoanSchedule(loanAmount, yearlyInterest, months, partPaymentFr
 
     // check if a part payment was made in the current month
     if (partPaymentMade) {
-      // increase the principal by the part payment
-      principal += partPaymentMade;
       // reduce the remaining loan amount by the part payment
       remainingLoanAmount -= partPaymentMade;
       // increase the total part payment by the part payment
