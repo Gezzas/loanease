@@ -13,9 +13,9 @@ const currentDate = new Date()
   .join("-");
 
 const defaultValues = {
-  loanAmount: "50,000",
-  interestRate: "5.8",
-  loanPeriod: "4",
+  loanAmount: "100,000",
+  interestRate: "6",
+  loanPeriod: "15",
   loanStartDate: currentDate,
   partPayInstallment: "",
   partPayment: "off",
